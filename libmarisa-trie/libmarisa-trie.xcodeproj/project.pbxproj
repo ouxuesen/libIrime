@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CC5CE201CFC462E001A48D6 /* libmarisa_trie.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0CC5CE1F1CFC462E001A48D6 /* libmarisa_trie.h */; };
+		0CC5CE221CFC462E001A48D6 /* libmarisa_trie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5CE211CFC462E001A48D6 /* libmarisa_trie.m */; };
+		D722A7DB234D92130036370A /* iostream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A798234D905A0036370A /* iostream.h */; };
+		D722A7DC234D92130036370A /* query.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A799234D905A0036370A /* query.h */; };
+		D722A7DD234D92130036370A /* keyset.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A79A234D905A0036370A /* keyset.h */; };
+		D722A7DE234D92130036370A /* key.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A79B234D905A0036370A /* key.h */; };
+		D722A7DF234D92130036370A /* scoped-ptr.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A79C234D905A0036370A /* scoped-ptr.h */; };
+		D722A7E0234D92130036370A /* agent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A79E234D905A0036370A /* agent.h */; };
+		D722A7E1234D92130036370A /* scoped-array.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A79F234D905A0036370A /* scoped-array.h */; };
+		D722A7E2234D92130036370A /* stdio.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A7A0234D905A0036370A /* stdio.h */; };
+		D722A7E3234D92130036370A /* exception.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A7A1234D905A0036370A /* exception.h */; };
+		D722A7E4234D92130036370A /* trie.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A7A2234D905A0036370A /* trie.h */; };
+		D722A7E5234D92130036370A /* base.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D722A7A3234D905A0036370A /* base.h */; };
+		D75C3A8B2356F825003B5CB4 /* trie.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A652356F825003B5CB4 /* trie.cc */; };
+		D75C3A8C2356F825003B5CB4 /* agent.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A662356F825003B5CB4 /* agent.cc */; };
+		D75C3A8D2356F825003B5CB4 /* reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A6B2356F825003B5CB4 /* reader.cc */; };
+		D75C3A8E2356F825003B5CB4 /* writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A6D2356F825003B5CB4 /* writer.cc */; };
+		D75C3A8F2356F825003B5CB4 /* mapper.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A6E2356F825003B5CB4 /* mapper.cc */; };
+		D75C3A902356F825003B5CB4 /* louds-trie.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A792356F825003B5CB4 /* louds-trie.cc */; };
+		D75C3A912356F825003B5CB4 /* tail.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A7D2356F825003B5CB4 /* tail.cc */; };
+		D75C3A922356F825003B5CB4 /* bit-vector.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A862356F825003B5CB4 /* bit-vector.cc */; };
+		D75C3A932356F825003B5CB4 /* keyset.cc in Sources */ = {isa = PBXBuildFile; fileRef = D75C3A8A2356F825003B5CB4 /* keyset.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CC5CE1A1CFC462E001A48D6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D722A7DB234D92130036370A /* iostream.h in CopyFiles */,
+				D722A7DC234D92130036370A /* query.h in CopyFiles */,
+				D722A7DD234D92130036370A /* keyset.h in CopyFiles */,
+				D722A7DE234D92130036370A /* key.h in CopyFiles */,
+				D722A7DF234D92130036370A /* scoped-ptr.h in CopyFiles */,
+				D722A7E0234D92130036370A /* agent.h in CopyFiles */,
+				D722A7E1234D92130036370A /* scoped-array.h in CopyFiles */,
+				D722A7E2234D92130036370A /* stdio.h in CopyFiles */,
+				D722A7E3234D92130036370A /* exception.h in CopyFiles */,
+				D722A7E4234D92130036370A /* trie.h in CopyFiles */,
+				D722A7E5234D92130036370A /* base.h in CopyFiles */,
+				0CC5CE201CFC462E001A48D6 /* libmarisa_trie.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CC5CE1C1CFC462E001A48D6 /* liblibmarisa-trie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmarisa-trie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC5CE1F1CFC462E001A48D6 /* libmarisa_trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmarisa_trie.h; sourceTree = "<group>"; };
+		0CC5CE211CFC462E001A48D6 /* libmarisa_trie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmarisa_trie.m; sourceTree = "<group>"; };
+		D722A798234D905A0036370A /* iostream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iostream.h; sourceTree = "<group>"; };
+		D722A799234D905A0036370A /* query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = query.h; sourceTree = "<group>"; };
+		D722A79A234D905A0036370A /* keyset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyset.h; sourceTree = "<group>"; };
+		D722A79B234D905A0036370A /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		D722A79C234D905A0036370A /* scoped-ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "scoped-ptr.h"; sourceTree = "<group>"; };
+		D722A79D234D905A0036370A /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		D722A79E234D905A0036370A /* agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent.h; sourceTree = "<group>"; };
+		D722A79F234D905A0036370A /* scoped-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "scoped-array.h"; sourceTree = "<group>"; };
+		D722A7A0234D905A0036370A /* stdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdio.h; sourceTree = "<group>"; };
+		D722A7A1234D905A0036370A /* exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
+		D722A7A2234D905A0036370A /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		D722A7A3234D905A0036370A /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		D722A7A4234D905A0036370A /* marisa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marisa.h; sourceTree = "<group>"; };
+		D75C3A652356F825003B5CB4 /* trie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trie.cc; sourceTree = "<group>"; };
+		D75C3A662356F825003B5CB4 /* agent.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = agent.cc; sourceTree = "<group>"; };
+		D75C3A682356F825003B5CB4 /* algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algorithm.h; sourceTree = "<group>"; };
+		D75C3A6A2356F825003B5CB4 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		D75C3A6B2356F825003B5CB4 /* reader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reader.cc; sourceTree = "<group>"; };
+		D75C3A6C2356F825003B5CB4 /* mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapper.h; sourceTree = "<group>"; };
+		D75C3A6D2356F825003B5CB4 /* writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writer.cc; sourceTree = "<group>"; };
+		D75C3A6E2356F825003B5CB4 /* mapper.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapper.cc; sourceTree = "<group>"; };
+		D75C3A6F2356F825003B5CB4 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		D75C3A712356F825003B5CB4 /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
+		D75C3A722356F825003B5CB4 /* intrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intrin.h; sourceTree = "<group>"; };
+		D75C3A742356F825003B5CB4 /* range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
+		D75C3A752356F825003B5CB4 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		D75C3A762356F825003B5CB4 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		D75C3A772356F825003B5CB4 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		D75C3A782356F825003B5CB4 /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		D75C3A792356F825003B5CB4 /* louds-trie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "louds-trie.cc"; sourceTree = "<group>"; };
+		D75C3A7A2356F825003B5CB4 /* entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entry.h; sourceTree = "<group>"; };
+		D75C3A7B2356F825003B5CB4 /* tail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tail.h; sourceTree = "<group>"; };
+		D75C3A7C2356F825003B5CB4 /* history.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = history.h; sourceTree = "<group>"; };
+		D75C3A7D2356F825003B5CB4 /* tail.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tail.cc; sourceTree = "<group>"; };
+		D75C3A7E2356F825003B5CB4 /* state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		D75C3A7F2356F825003B5CB4 /* louds-trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "louds-trie.h"; sourceTree = "<group>"; };
+		D75C3A802356F825003B5CB4 /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		D75C3A812356F825003B5CB4 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		D75C3A822356F825003B5CB4 /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		D75C3A842356F825003B5CB4 /* bit-vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bit-vector.h"; sourceTree = "<group>"; };
+		D75C3A852356F825003B5CB4 /* pop-count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pop-count.h"; sourceTree = "<group>"; };
+		D75C3A862356F825003B5CB4 /* bit-vector.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "bit-vector.cc"; sourceTree = "<group>"; };
+		D75C3A872356F825003B5CB4 /* flat-vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "flat-vector.h"; sourceTree = "<group>"; };
+		D75C3A882356F825003B5CB4 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		D75C3A892356F825003B5CB4 /* rank-index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rank-index.h"; sourceTree = "<group>"; };
+		D75C3A8A2356F825003B5CB4 /* keyset.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = keyset.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CC5CE191CFC462E001A48D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CC5CE131CFC462E001A48D6 = {
+			isa = PBXGroup;
+			children = (
+				D722A795234D905A0036370A /* marisa-trie */,
+				0CC5CE1E1CFC462E001A48D6 /* libmarisa-trie */,
+				0CC5CE1D1CFC462E001A48D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CC5CE1D1CFC462E001A48D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5CE1C1CFC462E001A48D6 /* liblibmarisa-trie.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CC5CE1E1CFC462E001A48D6 /* libmarisa-trie */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5CE1F1CFC462E001A48D6 /* libmarisa_trie.h */,
+				0CC5CE211CFC462E001A48D6 /* libmarisa_trie.m */,
+			);
+			path = "libmarisa-trie";
+			sourceTree = "<group>";
+		};
+		D722A795234D905A0036370A /* marisa-trie */ = {
+			isa = PBXGroup;
+			children = (
+				D722A796234D905A0036370A /* include */,
+				D722A7A5234D905A0036370A /* lib */,
+			);
+			path = "marisa-trie";
+			sourceTree = "<group>";
+		};
+		D722A796234D905A0036370A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D722A797234D905A0036370A /* marisa */,
+				D722A7A4234D905A0036370A /* marisa.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D722A797234D905A0036370A /* marisa */ = {
+			isa = PBXGroup;
+			children = (
+				D722A798234D905A0036370A /* iostream.h */,
+				D722A799234D905A0036370A /* query.h */,
+				D722A79A234D905A0036370A /* keyset.h */,
+				D722A79B234D905A0036370A /* key.h */,
+				D722A79C234D905A0036370A /* scoped-ptr.h */,
+				D722A79D234D905A0036370A /* Makefile.am */,
+				D722A79E234D905A0036370A /* agent.h */,
+				D722A79F234D905A0036370A /* scoped-array.h */,
+				D722A7A0234D905A0036370A /* stdio.h */,
+				D722A7A1234D905A0036370A /* exception.h */,
+				D722A7A2234D905A0036370A /* trie.h */,
+				D722A7A3234D905A0036370A /* base.h */,
+			);
+			path = marisa;
+			sourceTree = "<group>";
+		};
+		D722A7A5234D905A0036370A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A642356F825003B5CB4 /* marisa */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D75C3A642356F825003B5CB4 /* marisa */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A652356F825003B5CB4 /* trie.cc */,
+				D75C3A662356F825003B5CB4 /* agent.cc */,
+				D75C3A672356F825003B5CB4 /* grimoire */,
+				D75C3A8A2356F825003B5CB4 /* keyset.cc */,
+			);
+			path = marisa;
+			sourceTree = "<group>";
+		};
+		D75C3A672356F825003B5CB4 /* grimoire */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A682356F825003B5CB4 /* algorithm.h */,
+				D75C3A692356F825003B5CB4 /* io */,
+				D75C3A702356F825003B5CB4 /* algorithm */,
+				D75C3A722356F825003B5CB4 /* intrin.h */,
+				D75C3A732356F825003B5CB4 /* trie */,
+				D75C3A802356F825003B5CB4 /* io.h */,
+				D75C3A812356F825003B5CB4 /* vector.h */,
+				D75C3A822356F825003B5CB4 /* trie.h */,
+				D75C3A832356F825003B5CB4 /* vector */,
+			);
+			path = grimoire;
+			sourceTree = "<group>";
+		};
+		D75C3A692356F825003B5CB4 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A6A2356F825003B5CB4 /* reader.h */,
+				D75C3A6B2356F825003B5CB4 /* reader.cc */,
+				D75C3A6C2356F825003B5CB4 /* mapper.h */,
+				D75C3A6D2356F825003B5CB4 /* writer.cc */,
+				D75C3A6E2356F825003B5CB4 /* mapper.cc */,
+				D75C3A6F2356F825003B5CB4 /* writer.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		D75C3A702356F825003B5CB4 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A712356F825003B5CB4 /* sort.h */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		D75C3A732356F825003B5CB4 /* trie */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A742356F825003B5CB4 /* range.h */,
+				D75C3A752356F825003B5CB4 /* header.h */,
+				D75C3A762356F825003B5CB4 /* config.h */,
+				D75C3A772356F825003B5CB4 /* key.h */,
+				D75C3A782356F825003B5CB4 /* cache.h */,
+				D75C3A792356F825003B5CB4 /* louds-trie.cc */,
+				D75C3A7A2356F825003B5CB4 /* entry.h */,
+				D75C3A7B2356F825003B5CB4 /* tail.h */,
+				D75C3A7C2356F825003B5CB4 /* history.h */,
+				D75C3A7D2356F825003B5CB4 /* tail.cc */,
+				D75C3A7E2356F825003B5CB4 /* state.h */,
+				D75C3A7F2356F825003B5CB4 /* louds-trie.h */,
+			);
+			path = trie;
+			sourceTree = "<group>";
+		};
+		D75C3A832356F825003B5CB4 /* vector */ = {
+			isa = PBXGroup;
+			children = (
+				D75C3A842356F825003B5CB4 /* bit-vector.h */,
+				D75C3A852356F825003B5CB4 /* pop-count.h */,
+				D75C3A862356F825003B5CB4 /* bit-vector.cc */,
+				D75C3A872356F825003B5CB4 /* flat-vector.h */,
+				D75C3A882356F825003B5CB4 /* vector.h */,
+				D75C3A892356F825003B5CB4 /* rank-index.h */,
+			);
+			path = vector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CC5CE1B1CFC462E001A48D6 /* libmarisa-trie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC5CE251CFC462E001A48D6 /* Build configuration list for PBXNativeTarget "libmarisa-trie" */;
+			buildPhases = (
+				0CC5CE181CFC462E001A48D6 /* Sources */,
+				0CC5CE191CFC462E001A48D6 /* Frameworks */,
+				0CC5CE1A1CFC462E001A48D6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libmarisa-trie";
+			productName = "libmarisa-trie";
+			productReference = 0CC5CE1C1CFC462E001A48D6 /* liblibmarisa-trie.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CC5CE141CFC462E001A48D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = jimmy54;
+				TargetAttributes = {
+					0CC5CE1B1CFC462E001A48D6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 0CC5CE171CFC462E001A48D6 /* Build configuration list for PBXProject "libmarisa-trie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 0CC5CE131CFC462E001A48D6;
+			productRefGroup = 0CC5CE1D1CFC462E001A48D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CC5CE1B1CFC462E001A48D6 /* libmarisa-trie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CC5CE181CFC462E001A48D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75C3A902356F825003B5CB4 /* louds-trie.cc in Sources */,
+				D75C3A8F2356F825003B5CB4 /* mapper.cc in Sources */,
+				D75C3A8D2356F825003B5CB4 /* reader.cc in Sources */,
+				D75C3A8E2356F825003B5CB4 /* writer.cc in Sources */,
+				D75C3A922356F825003B5CB4 /* bit-vector.cc in Sources */,
+				0CC5CE221CFC462E001A48D6 /* libmarisa_trie.m in Sources */,
+				D75C3A912356F825003B5CB4 /* tail.cc in Sources */,
+				D75C3A8B2356F825003B5CB4 /* trie.cc in Sources */,
+				D75C3A932356F825003B5CB4 /* keyset.cc in Sources */,
+				D75C3A8C2356F825003B5CB4 /* agent.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0CC5CE231CFC462E001A48D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0CC5CE241CFC462E001A48D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CC5CE261CFC462E001A48D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/marisa-trie/lib\"",
+					"\"$(SRCROOT)/marisa-trie/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0CC5CE271CFC462E001A48D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/marisa-trie/lib\"",
+					"\"$(SRCROOT)/marisa-trie/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CC5CE171CFC462E001A48D6 /* Build configuration list for PBXProject "libmarisa-trie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC5CE231CFC462E001A48D6 /* Debug */,
+				0CC5CE241CFC462E001A48D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC5CE251CFC462E001A48D6 /* Build configuration list for PBXNativeTarget "libmarisa-trie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC5CE261CFC462E001A48D6 /* Debug */,
+				0CC5CE271CFC462E001A48D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CC5CE141CFC462E001A48D6 /* Project object */;
+}
